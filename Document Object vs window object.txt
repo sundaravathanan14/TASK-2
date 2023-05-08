@@ -1,0 +1,43 @@
+Document Object: The document object represent a web page that is loaded in the browser. By accessing the document object, we can access the element in the HTML page. With the help of document objects, we can add dynamic content to our web page. The document object can be accessed with a window.document or just document.
+
+Syntax:
+document.property_name;
+
+The Document object has a variety of properties and methods that allow developers to manipulate the contents of the web page. Here are some common examples:
+1. getElementById(): This method allows you to retrieve an HTML element from the page based on its unique identifier (id).
+2. getElementsByTagName(): This method returns an array of all the elements on the page with a given tag name.
+3. createElement(): This method allows you to create a new HTML element and add it to the page.
+4. innerHTML: This property allows you to get or set the HTML content of an element on the page.
+5. style: This property allows you to get or set the CSS style of an element on the page.
+6. querySelector(): This method allows you to retrieve the first element that matches a specified CSS selector.
+By using these properties and methods, developers can dynamically modify the content and behavior of the web page in response to user actions or other events.
+It's important to note that the Document object is only available in the browser environment and cannot be used in server-side JavaScript code. Additionally, some properties and methods of the Document object may not be available in older web browsers or in certain web development frameworks.
+Top of Form
+
+
+
+Window Object: The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage. Whenever a window appears on the screen to display the contents of the document, the window object is created. 
+Syntax:
+window.property_name;
+
+Here are some examples of the properties and methods provided by the Window object:
+1. alert(): This method displays a popup message to the user.
+2. document: This property provides access to the Document object, which represents the current web page.
+3. location: This property provides information about the URL of the current web page and allows you to change the location to a different URL.
+4. open(): This method opens a new browser window or tab.
+5. close(): This method closes the current browser window.
+6. setInterval(): This method allows you to schedule a function to run repeatedly at a specified interval.
+7. setTimeout(): This method allows you to schedule a function to run after a specified delay.
+8. scrollBy(): This method scrolls the content of the browser window by a specified number of pixels.
+By using these properties and methods, developers can create interactive web pages that respond to user input and provide a rich user experience.
+It's important to note that the Window object is a global object, which means that its properties and methods are accessible from anywhere in the JavaScript code. However, some properties and methods may not be available in older web browsers or in certain web development frameworks.
+Top of Form
+
+
+Difference between document and window:
+
+documentwindowIt represents any HTML document or web page that is loaded in the browser.It represents a browser window or frame that displays the contents of the webpage.   It is loaded inside the window.It is the very first object that is loaded in the browser.It is the object of window property.It is the object of the browser.All the tags, elements with attributes in HTML are part of the document.Global objects, functions, and variables of JavaScript are members of the window object.We can access the document from a window using the window. documentWe can access the window from the window only. i.e. window.windowThe document is part of BOM (browser object model) and dom (Document object model)The window is part of BOM, not DOM.Properties of document objects such as title, body, cookies, etc can also be accessed by a window like this window. document.titleProperties of the window object cannot be accessed by the document object.syntax:
+      document.propertyname;syntax:
+window.propertyname;example:
+     document.title :  will return the title of the documentexample:
+window.innerHeight : will return the height of the content area of the browser
